@@ -12,7 +12,6 @@ specifiers:
   eslint: ^8.31.0
   eslint-plugin-react-hooks: ^4.6.0
   prettier: ^2.8.2
-  prettier-plugin-organize-imports: ^3.2.1
   react: ^18.2.0
   react-dom: ^18.2.0
   react-router: ^6.6.1
@@ -21,12 +20,14 @@ specifiers:
   unocss: ^0.48.3
   vite: ^4.0.0
   vite-plugin-pages: ^0.28.0
+  zustand: ^4.2.0
 
 dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-router: 6.6.1_react@18.2.0
   react-router-dom: 6.6.1_biqbaboplfbrettd7655fr4n2y
+  zustand: 4.2.0_react@18.2.0
 
 devDependencies:
   '@iconify-json/mdi': 1.1.41
@@ -40,7 +41,6 @@ devDependencies:
   eslint: 8.31.0
   eslint-plugin-react-hooks: 4.6.0_eslint@8.31.0
   prettier: 2.8.2
-  prettier-plugin-organize-imports: 3.2.1_7zh76q2qrt7th5cvcxurl33jgy
   typescript: 4.9.4
   unocss: 0.48.3_vite@4.0.4
   vite: 4.0.4
@@ -2357,23 +2357,6 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-organize-imports/3.2.1_7zh76q2qrt7th5cvcxurl33jgy:
-    resolution: {integrity: sha512-bty7C2Ecard5EOXirtzeCAqj4FU4epeuWrQt/Z+sh8UVEpBlBZ3m3KNPz2kFu7KgRTQx/C9o4/TdquPD1jOqjQ==}
-    peerDependencies:
-      '@volar/vue-language-plugin-pug': ^1.0.4
-      '@volar/vue-typescript': ^1.0.4
-      prettier: '>=2.0'
-      typescript: '>=2.9'
-    peerDependenciesMeta:
-      '@volar/vue-language-plugin-pug':
-        optional: true
-      '@volar/vue-typescript':
-        optional: true
-    dependencies:
-      prettier: 2.8.2
-      typescript: 4.9.4
-    dev: true
-
   /prettier/2.8.2:
     resolution: {integrity: sha512-BtRV9BcncDyI2tsuS19zzhzoxD8Dh8LiCx7j7tHzrkz8GFXAexeWFdi22mjE1d16dftH2qNaytVxqiRTGlMfpw==}
     engines: {node: '>=10.13.0'}
@@ -2719,6 +2702,14 @@ packages:
       punycode: 2.1.1
     dev: true
 
+  /use-sync-external-store/1.2.0_react@18.2.0:
+    resolution: {integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
+
   /vite-plugin-pages/0.28.0_vite@4.0.4:
     resolution: {integrity: sha512-yncDncFVnjUzhqJnwCgGDZoZ/wO6MEOMe93f2MQjplKXm1MpmHCrTkFCPnQyYGZTVKPAN+y7BQcIpNWPFLQ4+w==}
     peerDependencies:
@@ -2840,3 +2831,19 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
+
+  /zustand/4.2.0_react@18.2.0:
+    resolution: {integrity: sha512-eNwaDoD2FYVnMgtNxiMUhTJO780wonZUzJrPQTLYI0erSIMZF8cniWFW22kGQUECd8rdHRJ/ZJL2XO54c9Ttuw==}
+    engines: {node: '>=12.7.0'}
+    peerDependencies:
+      immer: '>=9.0'
+      react: '>=16.8'
+    peerDependenciesMeta:
+      immer:
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      react: 18.2.0
+      use-sync-external-store: 1.2.0_react@18.2.0
+    dev: false

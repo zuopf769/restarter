@@ -15,10 +15,7 @@ module.exports = {
   vueIndentScriptAndStyle: false,
   embeddedLanguageFormatting: 'auto',
   singleAttributePerLine: false,
-  plugins: [
-    'prettier-plugin-organize-imports',
-    '@trivago/prettier-plugin-sort-imports',
-  ],
+  plugins: ['@trivago/prettier-plugin-sort-imports'],
   importOrder: ['<THIRD_PARTY_MODULES>', '^[./]'],
   importOrderSeparation: true,
   importOrderCaseInsensitive: true,

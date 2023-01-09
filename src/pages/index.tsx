@@ -1,10 +1,9 @@
-import { useState } from 'react'
-
 import reactLogo from '../assets/react.svg'
+import { useStore } from '../state/useStore'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const { count, inc } = useStore()
 
   return (
     <div className="App">
@@ -25,9 +24,7 @@ function App() {
       </div>
       <h1>Vite + React + UnoCSS</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+        <button onClick={inc}>count is {count}</button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
