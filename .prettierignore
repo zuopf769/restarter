@@ -23,4 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 
+# Different ignore files with gitignore
 pnpm-lock.yaml
