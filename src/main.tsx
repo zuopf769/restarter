@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, useRoutes } from 'react-router-dom'
+import 'uno.css'
 import routes from '~react-pages'
 
 import './index.css'

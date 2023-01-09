@@ -16,8 +16,8 @@ module.exports = {
   embeddedLanguageFormatting: 'auto',
   singleAttributePerLine: false,
   plugins: [
-    '@trivago/prettier-plugin-sort-imports',
     'prettier-plugin-organize-imports',
+    '@trivago/prettier-plugin-sort-imports',
   ],
   importOrder: ['<THIRD_PARTY_MODULES>', '^[./]'],
   importOrderSeparation: true,
