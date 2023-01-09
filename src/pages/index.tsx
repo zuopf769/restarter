@@ -1,5 +1,5 @@
 import reactLogo from '../assets/react.svg'
-import { useStore } from '../state/useStore'
+import { useStore } from '../stores/useStore'
 import './App.css'
 
 function App() {
