@@ -9,7 +9,9 @@ import Pages from 'vite-plugin-pages'
 export default defineConfig({
   plugins: [
     react(),
-    Pages(),
+    Pages({
+      importMode: 'sync',
+    }),
     Unocss({
       presets: [
         presetAttributify(),
@@ -27,6 +29,20 @@ export default defineConfig({
         [
           'icon-btn',
           'inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-teal-600',
+        ],
+      ],
+      rules: [
+        [
+          'drop-shadow-vite',
+          {
+            filter: 'drop-shadow(0 0 2em #646cffaa)',
+          },
+        ],
+        [
+          'drop-shadow-react',
+          {
+            filter: 'drop-shadow(0 0 2em #61dafbaa)',
+          },
         ],
       ],
     }),

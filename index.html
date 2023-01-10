@@ -11,8 +11,9 @@
           window.matchMedia &&
           window.matchMedia('(prefers-color-scheme: dark)').matches
         const setting = localStorage.getItem('use-dark') || 'auto'
-        if (setting === 'dark' || (prefersDark && setting !== 'light'))
+        if (setting === '"dark"' || (prefersDark && setting !== 'light')) {
           document.documentElement.classList.toggle('dark', true)
+        }
       })()
     </script>
   </head>
