@@ -1,5 +1,7 @@
 # hyoban/react-starter
 
+Inspired by [vitesse](https://github.com/antfu/vitesse)
+
 ## Features
 
 - [zustand](https://github.com/pmndrs/zustand) - Bear necessities for state management in React

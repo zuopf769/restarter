@@ -1,40 +1,16 @@
-import reactLogo from '../assets/react.svg'
-import { useStore } from '../stores/useStore'
-import './App.css'
+import { useDark } from '../hooks/useDark'
 
 function App() {
-  const { count, inc } = useStore()
+  const [isDark, toggleDark] = useDark()
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-        <a
-          href="https://github.com/unocss/unocss"
-          target="_blank"
-          rel="noreferrer">
-          <img
-            src="https://raw.githubusercontent.com/unocss/unocss/main/playground/public/icon-gray.svg"
-            alt="UnoCSS logo"
-            className="logo unocss"
-          />
-        </a>
-      </div>
-      <h1>Vite + React + UnoCSS</h1>
-      <div className="card">
-        <button onClick={inc}>count is {count}</button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div className="flex flex-col justify-center items-center h-screen">
+      <button onClick={toggleDark} className="icon-btn">
+        <div
+          className={
+            isDark ? 'i-mdi-moon-waxing-crescent' : 'i-mdi-white-balance-sunny'
+          }></div>
+      </button>
     </div>
   )
 }

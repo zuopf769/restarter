@@ -1,16 +1,12 @@
-import { Suspense } from 'react'
-import { useRoutes } from 'react-router'
-import { BrowserRouter as Router } from 'react-router-dom'
+import '@unocss/reset/tailwind.css'
+import { RouterProvider } from 'react-router'
+import { createBrowserRouter } from 'react-router-dom'
 import 'uno.css'
 import routes from '~react-pages'
 
-import './index.css'
+const router = createBrowserRouter(routes)
 
 const App = () => {
-  return (
-    <Router>
-      <Suspense fallback={<p>Loading...</p>}>{useRoutes(routes)}</Suspense>
-    </Router>
-  )
+  return <RouterProvider router={router}></RouterProvider>
 }
 export default App
