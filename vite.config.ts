@@ -1,7 +1,7 @@
 import presetIcons from '@unocss/preset-icons'
+import presetUno from '@unocss/preset-uno'
+import Unocss from '@unocss/vite'
 import react from '@vitejs/plugin-react-swc'
-import { presetUno } from 'unocss'
-import Unocss from 'unocss/vite'
 import { defineConfig } from 'vite'
 import Pages from 'vite-plugin-pages'
 

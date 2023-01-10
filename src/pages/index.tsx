@@ -8,7 +8,7 @@ function App() {
   const navigate = useNavigate()
 
   return (
-    <div className="flex h-screen flex-col items-center justify-center gap-4">
+    <div className="flex h-screen flex-col items-center gap-4 py-4">
       <a href="https://reactjs.org" target="_blank" rel="noreferrer">
         <img
           src={reactLogo}
