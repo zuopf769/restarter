@@ -1,6 +1,6 @@
 import presetIcons from '@unocss/preset-icons'
 import react from '@vitejs/plugin-react-swc'
-import { presetAttributify, presetUno } from 'unocss'
+import { presetUno } from 'unocss'
 import Unocss from 'unocss/vite'
 import { defineConfig } from 'vite'
 import Pages from 'vite-plugin-pages'
@@ -14,7 +14,6 @@ export default defineConfig({
     }),
     Unocss({
       presets: [
-        presetAttributify(),
         presetUno(),
         presetIcons({
           scale: 1.5,
