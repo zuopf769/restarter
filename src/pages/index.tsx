@@ -8,17 +8,17 @@ function App() {
   const navigate = useNavigate()
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen gap-4">
+    <div className="flex h-screen flex-col items-center justify-center gap-4">
       <a href="https://reactjs.org" target="_blank" rel="noreferrer">
         <img
           src={reactLogo}
-          className="h-20 hover:drop-shadow-react"
+          className="hover:drop-shadow-react h-20"
           alt="React logo"
         />
       </a>
       <h1 className="text-xl">react starter</h1>
       <input
-        className="w-35 h-10 p-2 rounded-md border-1 dark:border-gray-600 border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-300 dark:bg-stone-900"
+        className="w-35 border-1 h-10 rounded-md border-gray-300 p-2 focus:outline-none focus:ring-1 focus:ring-gray-300 dark:border-gray-600 dark:bg-stone-900"
         placeholder="Enter a user id"
         onKeyDown={(e) => {
           if (e.key === 'Enter') {
