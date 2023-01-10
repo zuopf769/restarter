@@ -6,8 +6,8 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'plugin:react-hooks/recommended',
     'plugin:@typescript-eslint/recommended',
+    'react-app',
   ],
   overrides: [],
   parser: '@typescript-eslint/parser',
@@ -15,6 +15,8 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['@typescript-eslint'],
-  rules: {},
+  plugins: ['react-refresh'],
+  rules: {
+    'react-refresh/only-export-components': 'warn',
+  },
 }

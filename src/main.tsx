@@ -1,19 +1,10 @@
-import React, { Suspense } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter as Router, useRoutes } from 'react-router-dom'
-import 'uno.css'
-import routes from '~react-pages'
 
-import './index.css'
-
-const App = () => {
-  return <Suspense fallback={<p>Loading...</p>}>{useRoutes(routes)}</Suspense>
-}
+import App from './app'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
+    <App />
   </React.StrictMode>,
 )

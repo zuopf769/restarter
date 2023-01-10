@@ -11,7 +11,8 @@
 - [React Router](https://github.com/remix-run/react-router) - Declarative routing for React
   - [`vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages) - file system based routing
 - [ESLint](https://eslint.org/)
-  - eslint-plugin-react-hooks
+  - [eslint-config-react-app](https://www.npmjs.com/package/eslint-config-react-app) - ESLint configuration used by Create React App
+  - [eslint-plugin-react-refresh](https://github.com/ArnaudBarre/eslint-plugin-react-refresh) - Validate that your components can safely be updated with fast refresh
 - [Prettier](https://prettier.io/)
   - [@trivago/prettier-plugin-sort-imports](https://github.com/trivago/prettier-plugin-sort-imports) - A prettier plugin to sort imports in typescript and javascript files by the provided RegEx order.
 - [TypeScript](https://www.typescriptlang.org/)
