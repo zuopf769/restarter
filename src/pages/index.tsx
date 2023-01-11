@@ -2,12 +2,13 @@ import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router'
 
 import reactLogo from '~/assets/react.svg'
+import LanguageSwitch from '~/components/languageSwitch'
 import { useDark } from '~/hooks/useDark'
 
 function App() {
   const [isDark, toggleDark] = useDark()
   const navigate = useNavigate()
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
 
   return (
     <div className="flex h-screen flex-col items-center gap-4 py-4">
@@ -36,18 +37,7 @@ function App() {
                 : 'i-mdi-white-balance-sunny'
             }></div>
         </button>
-        <button
-          onClick={() => {
-            const allLangs = i18n.options.supportedLngs
-            const currentLang = i18n.language
-            if (Array.isArray(allLangs)) {
-              const nextLang =
-                allLangs[(allLangs.indexOf(currentLang) + 1) % allLangs.length]
-              i18n.changeLanguage(nextLang)
-            }
-          }}>
-          <div className="i-mdi-translate"></div>
-        </button>
+        <LanguageSwitch />
         <a
           href="https://github.com/hyoban/react-starter"
           target="_blank"
