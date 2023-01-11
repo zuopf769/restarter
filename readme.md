@@ -12,6 +12,7 @@ Inspired by [vitesse](https://github.com/antfu/vitesse)
 - [Pure CSS Icons via UnoCSS](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
 - [React Router](https://github.com/remix-run/react-router) - Declarative routing for React
   - [`vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages) - file system based routing
+- [react-i18next](https://github.com/i18next/react-i18next) - Internationalization for react done right. Using the i18next i18n ecosystem.
 - [ESLint](https://eslint.org/)
   - [eslint-config-react-app](https://www.npmjs.com/package/eslint-config-react-app) - ESLint configuration used by Create React App
   - [eslint-plugin-react-refresh](https://github.com/ArnaudBarre/eslint-plugin-react-refresh) - Validate that your components can safely be updated with fast refresh
