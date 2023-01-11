@@ -10,6 +10,7 @@ Inspired by [vitesse](https://github.com/antfu/vitesse)
 - [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
 - [Iconify](https://iconify.design) - use icons from any icon sets [🔍Icônes](https://icones.netlify.app/)
 - [Pure CSS Icons via UnoCSS](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
+- [Ant Design](https://github.com/ant-design/ant-design) - An enterprise-class UI design language and React UI library
 - [React Router](https://github.com/remix-run/react-router) - Declarative routing for React
   - [`vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages) - file system based routing
 - [react-i18next](https://github.com/i18next/react-i18next) - Internationalization for react done right. Using the i18next i18n ecosystem.
