@@ -1,4 +1,4 @@
-# hyoban/react-starter
+# Restarter
 
 Inspired by [vitesse](https://github.com/antfu/vitesse)
 
