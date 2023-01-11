@@ -22,7 +22,7 @@
     "react-router-dom": "^6.6.2",
     "react-use": "^17.4.0",
     "swr": "^2.0.0",
-    "zustand": "^4.2.0"
+    "zustand": "^4.3.1"
   },
   "devDependencies": {
     "@iconify-json/mdi": "^1.1.41",
@@ -31,9 +31,6 @@
     "@types/react-dom": "^18.0.10",
     "@typescript-eslint/eslint-plugin": "^5.48.1",
     "@typescript-eslint/parser": "^5.48.1",
-    "@unocss/preset-icons": "^0.48.3",
-    "@unocss/preset-uno": "^0.48.3",
-    "@unocss/vite": "^0.48.3",
     "@vitejs/plugin-react-swc": "^3.0.1",
     "eslint": "^8.31.0",
     "eslint-config-react-app": "^7.0.1",
@@ -43,6 +40,7 @@
     "prettier-plugin-tailwindcss": "^0.2.1",
     "taze": "^0.8.5",
     "typescript": "^4.9.4",
+    "unocss": "^0.48.3",
     "vite": "^4.0.4",
     "vite-plugin-pages": "^0.28.0"
   }
