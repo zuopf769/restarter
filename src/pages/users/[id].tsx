@@ -1,6 +1,6 @@
 import { useParams } from 'react-router'
 
-import useUser from '../../network/useUser'
+import useUser from '~/network/useUser'
 
 function Userinfo() {
   const { id } = useParams()

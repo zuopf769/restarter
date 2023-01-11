@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router'
 
-import reactLogo from '../assets/react.svg'
-import { useDark } from '../hooks/useDark'
+import reactLogo from '~/assets/react.svg'
+import { useDark } from '~/hooks/useDark'
 
 function App() {
   const [isDark, toggleDark] = useDark()

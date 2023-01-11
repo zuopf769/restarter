@@ -17,6 +17,14 @@ module.exports = {
   },
   plugins: ['react-refresh'],
   rules: {
+    '@typescript-eslint/consistent-type-imports': [
+      'warn',
+      {
+        prefer: 'type-imports',
+        disallowTypeAnnotations: true,
+        fixStyle: 'separate-type-imports',
+      },
+    ],
     'react-refresh/only-export-components': 'warn',
   },
 }

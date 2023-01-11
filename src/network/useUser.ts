@@ -1,4 +1,5 @@
-import originalAxios, { AxiosError } from 'axios'
+import type { AxiosError } from 'axios'
+import originalAxios from 'axios'
 import useSWR from 'swr'
 
 const baseUrl = 'https://jsonplaceholder.typicode.com/'
