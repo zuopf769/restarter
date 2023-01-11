@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router'
 
-import reactLogo from '~/assets/react.svg'
 import ApperanceSwitch from '~/components/ApperanceSwitch'
 import LanguageSwitch from '~/components/languageSwitch'
 
@@ -13,7 +12,7 @@ function App() {
     <div className="flex flex-col items-center gap-4 pt-20">
       <a href="https://beta.reactjs.org" target="_blank" rel="noreferrer">
         <img
-          src={reactLogo}
+          src="/react.svg"
           className="hover:drop-shadow-react h-20"
           alt="React logo"
         />
