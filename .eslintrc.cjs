@@ -17,6 +17,7 @@ module.exports = {
   },
   plugins: ['react-refresh'],
   rules: {
+    'object-shorthand': 'warn',
     '@typescript-eslint/consistent-type-imports': [
       'warn',
       {

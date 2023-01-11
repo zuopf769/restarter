@@ -2,10 +2,11 @@ import type { AxiosError } from 'axios'
 import originalAxios from 'axios'
 import useSWR from 'swr'
 
-const baseUrl = 'https://jsonplaceholder.typicode.com/'
+const baseURL = 'https://jsonplaceholder.typicode.com/'
 
 const axios = originalAxios.create({
-  baseURL: baseUrl,
+  baseURL,
+  timeout: 10000,
 })
 
 const userFetcher = (id: string) =>
