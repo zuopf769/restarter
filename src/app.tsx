@@ -4,11 +4,10 @@ import { createBrowserRouter } from 'react-router-dom'
 import routes from '~react-pages'
 
 import { useDark } from '~/hooks/useDark'
-import '~/locales/i18n'
 
 import '@unocss/reset/tailwind.css'
 import 'virtual:uno.css'
-
+import '~/locales/i18n'
 import './main.css'
 
 const router = createBrowserRouter(routes)

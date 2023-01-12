@@ -18,8 +18,7 @@ Inspired by [vitesse](https://github.com/antfu/vitesse)
   - [eslint-config-react-app](https://www.npmjs.com/package/eslint-config-react-app) - ESLint configuration used by Create React App
   - [eslint-plugin-react-refresh](https://github.com/ArnaudBarre/eslint-plugin-react-refresh) - Validate that your components can safely be updated with fast refresh
 - [Prettier](https://prettier.io/)
-  - [@trivago/prettier-plugin-sort-imports](https://github.com/trivago/prettier-plugin-sort-imports) - A prettier plugin to sort imports in typescript and javascript files by the provided RegEx order.
-  - [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - A Prettier plugin for Tailwind CSS that automatically sorts classes based on our recommended class order.
+  - [@ianvs/prettier-plugin-sort-imports](https://github.com/ianvs/prettier-plugin-sort-imports) - A fork of trivago/prettier-plugin-sort-imports which does not sort side-effect imports
 - [TypeScript](https://www.typescriptlang.org/)
 - [pnpm](https://pnpm.io/) - Fast, disk space efficient package manager
 - [taze](https://github.com/antfu/taze) - A modern cli tool that keeps your deps fresh
