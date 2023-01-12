@@ -1,4 +1,4 @@
-import useSWR from 'swr'
+import useSWR, { preload } from 'swr'
 
 import { axios } from './axios'
 
@@ -9,13 +9,20 @@ export interface Todo {
   completed: boolean
 }
 
-const todoFetcher = (url: string) => axios.get(url).then((res) => res.data)
+export const todoFetcher = (url: string) =>
+  axios.get(url).then((res) => res.data)
 
 export function useTodoList(userId?: number) {
   const { data, error, isLoading } = useSWR<Todo[]>(
     userId ? `/todos/?userId=${userId}` : '/todos',
     todoFetcher,
   )
+
+  if (userId) {
+    preload(`/todos/?userId=${userId + 1}`, todoFetcher)
+    preload(`/todos/?userId=${userId - 1}`, todoFetcher)
+  }
+
   return {
     todos: data,
     isLoading,
@@ -28,6 +35,7 @@ export function useTodo(todoId: number) {
     `/todos/${todoId}`,
     todoFetcher,
   )
+
   return {
     todo: data,
     isLoading,

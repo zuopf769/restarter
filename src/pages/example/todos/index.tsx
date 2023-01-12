@@ -1,7 +1,8 @@
 import { Table } from 'antd'
 import { useState } from 'react'
+import { preload } from 'swr'
 
-import { useTodoList } from '~/network/useTodo'
+import { todoFetcher, useTodoList } from '~/network/useTodo'
 
 const columns = [
   {
@@ -18,6 +19,8 @@ const columns = [
     render: (value: boolean) => (value ? 'Yes' : 'No'),
   },
 ]
+
+preload('/todos/?userId=1', todoFetcher)
 
 function TodoTable() {
   const [current, setCurrent] = useState(1)
@@ -39,7 +42,8 @@ function TodoTable() {
         position: ['bottomCenter'],
       }}
       onChange={(pagination) => {
-        setCurrent(pagination.current ?? 1)
+        const selectedPage = pagination.current ?? 1
+        setCurrent(selectedPage)
       }}
     />
   )
