@@ -4,7 +4,7 @@ Inspired by [vitesse](https://github.com/antfu/vitesse)
 
 ## Features
 
-- [zustand](https://github.com/pmndrs/zustand) - Bear necessities for state management in React
+- [Jotai](https://jotai.org/) - Primitive and flexible state management for React
 - [SWR](https://swr.vercel.app/) - React Hooks for data fetching
   - [Axios](https://axios-http.com/) - Promise based HTTP client for the browser and node.js
 - [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.

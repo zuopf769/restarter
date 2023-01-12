@@ -1,11 +1,11 @@
+import { useAtom } from 'jotai'
 import { useEffect } from 'react'
-import { useLocalStorage, useMedia } from 'react-use'
+import { useMedia } from 'react-use'
+
+import { appearanceAtom } from '~/stores/atoms'
 
 export function useDark() {
-  const [setting, setSetting] = useLocalStorage<'auto' | 'light' | 'dark'>(
-    'use-dark',
-    'auto',
-  )
+  const [setting, setSetting] = useAtom(appearanceAtom)
   const isDark = useMedia('(prefers-color-scheme: dark)', false)
   const isDarkMode = setting === 'dark' || (isDark && setting !== 'light')
 
