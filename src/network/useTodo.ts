@@ -1,4 +1,4 @@
-import useSWR, { preload } from 'swr'
+import useSWR from 'swr'
 
 import { axios } from './axios'
 
@@ -17,11 +17,6 @@ export function useTodoList(userId?: number) {
     userId ? `/todos/?userId=${userId}` : '/todos',
     todoFetcher,
   )
-
-  if (userId) {
-    preload(`/todos/?userId=${userId + 1}`, todoFetcher)
-    preload(`/todos/?userId=${userId - 1}`, todoFetcher)
-  }
 
   return {
     todos: data,
