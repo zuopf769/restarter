@@ -9,15 +9,7 @@ export interface Todo {
   completed: boolean
 }
 
-const todoFetcher = (url: string) =>
-  axios
-    .get(url)
-    .then((res) => res.data)
-    .catch((err) => {
-      if (err.response?.status === 404) {
-        return null
-      }
-    })
+const todoFetcher = (url: string) => axios.get(url).then((res) => res.data)
 
 export function useTodoList(userId?: number) {
   const { data, error, isLoading } = useSWR<Todo[]>(

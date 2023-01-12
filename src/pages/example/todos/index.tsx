@@ -30,7 +30,7 @@ function TodoTable() {
       dataSource={todos ?? []}
       columns={columns}
       rowKey={(record) => record.id}
-      size="small"
+      size="middle"
       pagination={{
         current,
         pageSize: 20,
@@ -47,7 +47,7 @@ function TodoTable() {
 
 export default function TodoList() {
   return (
-    <div className="mx-auto mt-8 max-w-2xl">
+    <div className="mx-auto p-8 max-w-2xl">
       <h1 className="mb-4 text-3xl">TODO LIST</h1>
       <TodoTable />
     </div>
