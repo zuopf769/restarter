@@ -26,4 +26,5 @@ module.exports = {
   ],
   importOrderSeparation: true,
   importOrderCaseInsensitive: true,
+  importOrderMergeDuplicateImports: true,
 }
