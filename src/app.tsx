@@ -1,12 +1,15 @@
-import '@unocss/reset/tailwind.css'
 import { ConfigProvider, theme } from 'antd'
 import { RouterProvider } from 'react-router'
 import { createBrowserRouter } from 'react-router-dom'
-import 'virtual:uno.css'
 import routes from '~react-pages'
 
 import { useDark } from '~/hooks/useDark'
 import '~/locales/i18n'
+
+import '@unocss/reset/tailwind.css'
+import 'virtual:uno.css'
+
+import './main.css'
 
 const router = createBrowserRouter(routes)
 
