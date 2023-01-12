@@ -6,16 +6,19 @@ import { appearanceAtom } from '~/stores/atoms'
 
 export function useDark() {
   const [setting, setSetting] = useAtom(appearanceAtom)
-  const isDark = useMedia('(prefers-color-scheme: dark)', false)
-  const isDarkMode = setting === 'dark' || (isDark && setting !== 'light')
+  const isDark = useMedia('(prefers-color-scheme: dark)')
 
   useEffect(() => {
+    const isDarkMode = setting === 'dark' || (isDark && setting !== 'light')
     if (isDarkMode) {
       document.documentElement.classList.toggle('dark', true)
     } else {
       document.documentElement.classList.toggle('dark', false)
     }
-  }, [isDarkMode])
+    if ((setting === 'dark' && isDark) || (setting === 'light' && !isDark)) {
+      setSetting('auto')
+    }
+  }, [setting, isDark, setSetting])
 
   const toggleDark = () => {
     if (setting === 'auto') {
@@ -25,5 +28,8 @@ export function useDark() {
     }
   }
 
-  return [isDarkMode, toggleDark] as const
+  return [
+    setting === 'dark' || (isDark && setting !== 'light'),
+    toggleDark,
+  ] as const
 }
