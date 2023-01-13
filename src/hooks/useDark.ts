@@ -1,8 +1,12 @@
 import { useAtom } from 'jotai'
+import { atomWithStorage } from 'jotai/utils'
 import { useEffect } from 'react'
 import { useMedia } from 'react-use'
 
-import { appearanceAtom } from '~/stores/atoms'
+const appearanceAtom = atomWithStorage<'auto' | 'light' | 'dark'>(
+  'use-dark',
+  'auto',
+)
 
 export function useDark() {
   const [setting, setSetting] = useAtom(appearanceAtom)
