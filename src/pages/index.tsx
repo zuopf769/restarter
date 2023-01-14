@@ -2,8 +2,8 @@ import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router'
 import { Link } from 'react-router-dom'
 
-import ApperanceSwitch from '~/components/ApperanceSwitch'
-import LanguageSwitch from '~/components/languageSwitch'
+import ApperanceSwitch from '@/components/ApperanceSwitch'
+import LanguageSwitch from '@/components/languageSwitch'
 
 function App() {
   const navigate = useNavigate()

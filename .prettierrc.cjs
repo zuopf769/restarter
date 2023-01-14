@@ -21,7 +21,7 @@ module.exports = {
     '<TYPES>',
     '<TYPES>^[./]',
     '<THIRD_PARTY_MODULES>',
-    '^~/',
+    '^@/',
     '^./',
   ],
   importOrderSeparation: true,

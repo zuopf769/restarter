@@ -2,7 +2,7 @@ import { Table } from 'antd'
 import { useState } from 'react'
 import { preload } from 'swr'
 
-import { todoFetcher, useTodoList } from '~/network/useTodo'
+import { todoFetcher, useTodoList } from '@/network/useTodo'
 
 const columns = [
   {

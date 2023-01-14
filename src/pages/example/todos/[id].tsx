@@ -1,7 +1,7 @@
 import { Card } from 'antd'
 import { useParams } from 'react-router'
 
-import { useTodo } from '~/network/useTodo'
+import { useTodo } from '@/network/useTodo'
 
 function TodoTitle({ todoId }: { todoId: number }) {
   const { todo, isLoading, error } = useTodo(todoId)
