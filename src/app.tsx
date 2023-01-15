@@ -10,7 +10,7 @@ import { useTranslation } from 'react-i18next'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import routes from '~react-pages'
 
-import { useDark } from '@/hooks/useDark'
+import { useDark } from '@/hooks'
 
 const i18nToLocale = {
   en: enUS,

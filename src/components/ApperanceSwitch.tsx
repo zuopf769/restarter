@@ -1,4 +1,4 @@
-import { useDark } from '@/hooks/useDark'
+import { useDark } from '@/hooks'
 
 function ApperanceSwitch() {
   const [isDark, toggleDark] = useDark()
